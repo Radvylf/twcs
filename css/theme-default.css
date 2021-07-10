@@ -1,0 +1,168 @@
+:root {
+    --color-black: #0d1117;
+    --color-border: #30363d;
+    --color-medium: #161b22;
+    
+    --color-gray: #8b949e;
+    --color-white: #c9d1d9;
+    
+    --color-red: #ff7b72;
+    --color-green: #7ee787;
+    --color-blue: #79c0ff;
+    --color-light-blue: #a5d6ff;
+    --color-purple: #d2a8ff;
+}
+
+body[theme="default"], body[theme="default"] #search-input, body[theme="default"] #search-counting {
+    font-family: monospace;
+}
+
+body[theme="default"] header {
+    border-bottom: 1px solid var(--color-border);
+}
+
+body[theme="default"] header, body[theme="default"] .search-container {
+    background: var(--color-black);
+}
+
+body[theme="default"] .search-container {
+    border-color: var(--color-border);
+    border-radius: 0;
+}
+
+body[theme="default"] #search-input, body[theme="default"] .mdc-icon-button {
+  color: var(--color-white);
+}
+
+body[theme="default"] #search-counting.nomatches {
+  color: var(--color-red);
+}
+
+body[theme="default"] header.search-active .search-navigation-button {
+    border-left: 1px solid var(--color-border);
+}
+
+body[theme="default"] .mdc-icon-button {
+    opacity: 1;
+}
+
+body[theme="default"] #title-filename {
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+body[theme="default"] #sidebar {
+    background: var(--color-medium);
+    color: var(--color-white);
+    border-right: 1px solid var(--color-border) !important;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+body[theme="default"] #sidebar h1 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 48px;
+}
+
+body[theme="default"] #sidebar hr {
+    background: var(--color-border);
+    height: 1px;
+}
+
+body[theme="default"] #sidebar li, body[theme="default"] #sidebar .mdc-form-field {
+    border-radius: 0;
+}
+
+body[theme="default"] #sidebar .mdc-icon-button {
+    color: white;
+    opacity: 1;
+}
+
+body[theme="default"] #settings-list input[type="text"] {
+  color: var(--color-white);
+}
+
+/* Based on CodeMirror dark theme */
+/* Based on Sublime Text's dark theme */
+
+.cm-s-default.CodeMirror {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.cm-s-default .CodeMirror-sizer {
+    margin-left: 48px !important;
+}
+
+.cm-s-default .CodeMirror-gutters {
+    background: var(--color-black);
+    min-width: 48px;
+    box-sizing: border-box;
+    border-width: 0;
+}
+
+.cm-s-default .CodeMirror-linenumber {
+    color: rgba(240, 246, 252, 0.3) !important;
+    min-width: 48px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.cm-s-default .CodeMirror-line {
+    padding: 0 10px !important;
+    line-height: 16px !important;
+}
+
+.cm-s-default div.CodeMirror-selected { background: rgba(121, 192, 255, 0.3) !important; }
+.cm-s-default .CodeMirror-cursor { border-left: 1px solid var(--color-white) !important; }
+
+.cm-s-default .cm-keyword { color: var(--color-purple); }
+.cm-s-default .cm-atom { color: var(--color-purple); }
+.cm-s-default .cm-number { color: var(--color-green); }
+.cm-s-default .cm-def { color: var(--color-blue); }
+.cm-s-default .cm-variable { color: var(--color-white); }
+.cm-s-default .cm-variable-2 { color: var(--color-light-blue); }
+.cm-s-default .cm-variable-3 { color: var(--color-green); }
+.cm-s-default .cm-property { color: var(--color-white); }
+.cm-s-default .cm-operator { color: var(--color-white); }
+.cm-s-default .cm-comment { color: var(--color-gray); }
+.cm-s-default .cm-string { color: var(--color-green); }
+.cm-s-default .cm-string-2 { color: var(--color-green); }
+
+/* TODO: Add string-3 (light blue) for strings in HTML and CSS */
+
+.cm-s-default .cm-meta { color: var(--color-gray); }
+.cm-s-default .cm-error { color: var(--color-red); }
+.cm-s-default .cm-qualifier { color: var(--color-blue); }
+.cm-s-default .cm-builtin { color: var(--color-blue); }
+.cm-s-default .cm-bracket { color: var(--color-gray); }
+.cm-s-default .cm-tag { color: var(--color-green); }
+.cm-s-default .cm-attribute { color: var(--color-red); }
+.cm-s-default .cm-header { color: var(--color-white); }
+.cm-s-default .cm-quote { color: var(--color-gray); }
+.cm-s-default .cm-hr { color: var(--color-gray); }
+.cm-s-default .cm-link { color: var(--color-gray); }
+.cm-s-default .cm-url { color: var(--color-gray); }
+.cm-s-default .cm-image-marker { color: var(--color-purple); }
+
+.cm-s-default .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: var(--color-gray) !important;
+}
+
+body[theme="default"] div.CodeMirror span.CodeMirror-matchingbracket {
+  color: inherit !important;
+  border-bottom: 1px solid var(--color-white);
+}
+
+body[theme="default"] div.CodeMirror span.CodeMirror-nonmatchingbracket {
+  color: inherit !important;
+}
+
+body[theme="default"] .mdc-icon-button::before, body[theme="default"] .mdc-icon-button::after {
+  background-color: var(--color-white);
+}
